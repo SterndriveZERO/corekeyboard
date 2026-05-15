@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beginner guide — Texture packs</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>📘 Texture packs</h1>
+  <div class="header-actions">
+    <a class="button" href="{{ url_for('pvp') }}">← PvP guide</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <p class="section-kicker">Beginner guide</p>
+  {% include 'partials/beginner_tabs.html' %}
+
+  <div class="panel">
+    <h2>🎨 Texture packs (optional)</h2>
+    <p>Useful traits to look for:</p>
+    <ul>
+      <li>Side shield</li>
+      <li>Low fire</li>
+      <li>Smaller items</li>
+    </ul>
+    <p>For why shield and bow-style packs help in fights, see the <b>Texture packs</b> section under <a href="{{ url_for('beginner_settings') }}">Optimized settings</a>.</p>
+  </div>
+
+  <div class="panel">
+    <h2>Packs I use</h2>
+    <p>I personally use <a href="https://packsmc.com/pack/123fda37-5f3e-4bfc-94e2-ac7e290adba9" target="_blank" rel="noopener noreferrer">Birria Pack</a> (PackMC).</p>
+    <p>Alternate choice: <a href="https://packsmc.com/pack/flowtives-150k-black-938b9c58" target="_blank" rel="noopener noreferrer">Flowtives 150k</a> (PackMC).</p>
+  </div>
+
+</div>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

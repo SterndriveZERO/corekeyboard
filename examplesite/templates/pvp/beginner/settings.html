@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Beginner guide — Optimized settings</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>📘 Optimized settings</h1>
+  <div class="header-actions">
+    <a class="button" href="{{ url_for('pvp') }}">← PvP guide</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <p class="section-kicker">Beginner guide</p>
+  {% include 'partials/beginner_tabs.html' %}
+
+  <div class="panel">
+    <h2>⚙️ Settings guide</h2>
+    <p>Before anything: if you are comfortable with your current settings and sure that they are not affecting your gameplay negatively, <b>do not change your settings</b>. At the end of the day, the best settings are the ones you can use the best.</p>
+  </div>
+
+  <div class="panel">
+    <h2>🎯 Mouse sensitivity</h2>
+    <p>Usually the ideal sensitivity is the one you feel the most comfortable with. However, because of things like common use of ranged weapons and techniques such as (but not limited to) backstabs, shams, and swaeshies, your aim needs to be as stable and precise as possible. That is why I recommend using:</p>
+    <ul>
+      <li><b>DPI:</b> 800–1500</li>
+      <li><b>In-game sensitivity:</b> 30–60</li>
+    </ul>
+    <p>I use 800 DPI and 44 sensitivity. A relatively low sens like the range above will help with the aforementioned situations. Once you find a sensitivity you are comfortable with, you should not make big changes to it often — the main goal is getting used to it.</p>
+  </div>
+
+  <div class="panel">
+    <h2>🖥️ FOV</h2>
+    <ul>
+      <li><b>Recommended range:</b> 75–95</li>
+      <li><b>Dynamic FOV:</b> Turn <b>off</b>. Shield dancing and constantly jumping for certain techniques make it distracting and can put you at a disadvantage.</li>
+      <li><b>View bobbing:</b> Turn <b>off</b>. It does not affect vision as much as dynamic FOV, but almost all top players turn it off because it is distracting.</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>🎥 Video settings</h2>
+    <ul>
+      <li>Set <b>framerate to whatever your monitor refresh rate is</b> for maximum responsiveness, and avoid view bobbing when possible.</li>
+      <li>Preferably keep <b>critical hit</b> and <b>bow particles</b> on — they help beginners understand what is happening.</li>
+      <li>On lower-end systems, reduce unnecessary effects to keep gameplay smooth.</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>⌨️ Keybinds</h2>
+    <p>There are only about <b>five hotkeys</b> you will rely on heavily, so pick the ones you can hit the fastest.</p>
+    <ul>
+      <li>Have a fast <b>axe → sword</b> and <b>sword → axe</b> keybind so you can execute the cooldown trick as efficiently as possible.</li>
+      <li>Bind <b>offhand</b> to something you can press comfortably — some important techniques need fast offhand swaps.</li>
+    </ul>
+  </div>
+
+</div>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

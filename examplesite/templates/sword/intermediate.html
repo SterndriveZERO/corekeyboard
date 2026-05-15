@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚔️ Minecraft PvP Guide</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>🥊 Intermediate Techniques</h1>
+  <div class="header-actions">
+    <a class="button" href="javascript:history.back()">← Back</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- HIT SELECT -->
+  <div class="technique">
+    <h2>⚔️ Hit Select</h2>
+
+    <span class="tag">Stun / NoKB</span>
+    <span class="tag">Risk ⭐⭐</span>
+    <span class="tag">Reward ⭐⭐⭐</span>
+
+    <h3>How to Perform</h3>
+    <p>
+      Let the opponent hit you, then immediately sprint hit them back.
+      If timed correctly, this creates a stun and reduces knockback by 40%.
+    </p>
+
+    <ul>
+      <li>Best when already in close range trades</li>
+      <li>Can counter Sprinthits and S-Hold deflection</li>
+    </ul>
+  </div>
+
+  <!-- UPPERCUT -->
+  <div class="technique">
+    <h2>⚔️ Uppercut</h2>
+
+    <span class="tag">Stun Technique</span>
+    <span class="tag">Risk ⭐⭐</span>
+    <span class="tag">Reward ⭐⭐⭐</span>
+
+    <h3>How to Perform</h3>
+    <p>Hit the opponent while jumping forward.</p>
+
+    <ul>
+      <li>Used to close long distances quickly</li>
+      <li>Can be used as combo extension</li>
+      <li>Works well with W-tap / S-tap combos</li>
+    </ul>
+  </div>
+
+  <!-- FALLING SPRINTHIT -->
+  <div class="technique">
+    <h2>⚔️ Falling Sprinthit</h2>
+
+    <span class="tag">Knockaway</span>
+    <span class="tag">Risk ⭐⭐</span>
+    <span class="tag">Reward ⭐⭐⭐</span>
+
+    <h3>How to Perform</h3>
+    <p>Perform a sprinthit while falling.</p>
+
+    <ul>
+      <li>Confuses opponents expecting a crit</li>
+      <li>Works well for combo extension</li>
+      <li>Strong vs defensive players holding S</li>
+    </ul>
+  </div>
+
+  <!-- S-CRIT -->
+  <div class="technique">
+    <h2>⚔️ S-Crits</h2>
+
+    <span class="tag">Spacing</span>
+    <span class="tag">Risk ⭐⭐</span>
+    <span class="tag">Reward ⭐⭐⭐</span>
+
+    <h3>How to Perform</h3>
+    <p>
+      Tap or hold S after a crit to create spacing advantage.
+    </p>
+
+    <ul>
+      <li>Creates hit advantage</li>
+      <li>Can be used for combos or escape</li>
+      <li>Strong when opponent is airborne</li>
+    </ul>
+  </div>
+
+  <!-- S-HOLD DEFLECTION -->
+  <div class="technique">
+    <h2>⚔️ S-Hold Deflection</h2>
+
+    <span class="tag">Stun Technique</span>
+    <span class="tag">Risk ⭐⭐</span>
+    <span class="tag">Reward ⭐⭐⭐</span>
+
+    <h3>How to Perform</h3>
+    <p>
+      After a Crit Deflection, hold S to reposition and extend range.
+    </p>
+
+    <ul>
+      <li>Best vs NoKB crit pressure</li>
+      <li>Only works defensively</li>
+    </ul>
+  </div>
+
+  <!-- REPOSITIONING -->
+  <div class="technique">
+    <h2>⚔️ Repositioning</h2>
+
+    <span class="tag">Spacing</span>
+    <span class="tag">Risk ⭐⭐</span>
+    <span class="tag">Reward ⭐⭐⭐</span>
+
+    <h3>How to Perform</h3>
+    <p>
+      Adjust your position using movement keys (mostly S) to maintain optimal range.
+    </p>
+  </div>
+
+  <!-- JUMP RESET -->
+  <div class="technique">
+    <h2>⚔️ Jump Reset</h2>
+
+    <span class="tag">NoKB</span>
+    <span class="tag">Risk ⭐⭐</span>
+    <span class="tag">Reward ⭐⭐</span>
+
+    <h3>How to Perform</h3>
+    <p>
+      Jump at the moment of being hit to reduce knockback.
+    </p>
+
+    <ul>
+      <li>Best vs sprinthits</li>
+      <li>Bad vs delayed timing or stun hits</li>
+    </ul>
+  </div>
+
+  <!-- PICK HIT -->
+  <div class="technique">
+    <h2>⚔️ Pick Hit</h2>
+
+    <span class="tag">Damage</span>
+    <span class="tag">Risk ⭐⭐</span>
+    <span class="tag">Reward ⭐⭐</span>
+
+    <h3>How to Perform</h3>
+    <p>
+      Hit before your crosshair is fully charged (0–90%).
+    </p>
+
+    <ul>
+      <li>Good for finishing combos</li>
+      <li>Can interrupt opponent movement</li>
+    </ul>
+  </div>
+
+  <!-- SPRINT CRITS -->
+  <div class="technique">
+    <h2>⚔️ Sprint Crits</h2>
+
+    <span class="tag">Damage</span>
+    <span class="tag">Risk ⭐⭐⭐</span>
+    <span class="tag">Reward ⭐⭐</span>
+
+    <h3>How to Perform</h3>
+    <p>
+      Cancel sprint hit, then immediately jump and crit.
+    </p>
+
+    <ul>
+      <li>Harder version of Standard Crits</li>
+      <li>Less control, higher risk</li>
+    </ul>
+  </div>
+
+  <!-- NEXT -->
+  <div class="next">
+    <a class="button" href="/sword/advanced">
+      ▶ Continue Training → Advanced Techniques
+    </a>
+  </div>
+
+</div>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

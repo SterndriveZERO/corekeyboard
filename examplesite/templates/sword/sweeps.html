@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚔️ Minecraft PvP Guide</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>🪃 Advanced Sweeps</h1>
+  <div class="header-actions">
+    <a class="button" href="javascript:history.back()">← Back</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="panel">
+    <h2>⚔️ Overview</h2>
+    <p>
+      Sweeps are control-based attacks used to manipulate spacing, dodge timing, and punish aggressive play.
+      They rely heavily on sprint control and hit priority.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h2>🪃 Core Sweeping Methods</h2>
+
+    <h3>🏃 Sprint Sweep</h3>
+    <p>
+      Hold W + sprint. First hit is a sprint hit, following hits become sweeps until sprint resets.
+    </p>
+
+    <h3>🔁 W-Release Sweep</h3>
+    <p>
+      Release W before every hit → hit → press W again. Used for control and spacing during combos.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h2>🪃 Sweep Techniques</h2>
+
+    <h3>1. Single Sweep</h3>
+    <p>
+      Used to force misses and break opponent aim. Best at close range or after dodges.
+    </p>
+
+    <h3>2. Sweep Combo</h3>
+    <p>
+      Strafing with sweeps makes your movement unpredictable and harder to track.
+      Strong when opponent already missed a hit.
+    </p>
+
+    <h3>3. Punish Sweep</h3>
+    <p>
+      Counter to hit select. Sweep → bait hit → sprint hit back for stun.
+    </p>
+
+    <h3>4. Backaway Sweep</h3>
+    <p>
+      Sweep into S-Crit to disengage while maintaining control.
+    </p>
+
+    <h3>5. Followup Sweep</h3>
+    <p>
+      Used to extend combos by catching S-hold escape attempts.
+    </p>
+
+    <h3>6. Back Sweep (Trade Counter)</h3>
+    <p>
+      Used when both players crit at the same time. Sweep after their hit to gain stun advantage.
+    </p>
+
+    <h3>7. Side Sweep</h3>
+    <p>
+      Anti-rush tool. Used against aggressive players to break their aim and reposition.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h2>📌 Key Idea</h2>
+    <p>
+      Sweeps are not about raw damage — they are about controlling timing, spacing, and opponent movement.
+    </p>
+  </div>
+
+  <div class="next">
+    <a class="button" href="/sword/skills">
+    ▶ Next → Skills
+  </a>
+  </div>
+
+</div>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

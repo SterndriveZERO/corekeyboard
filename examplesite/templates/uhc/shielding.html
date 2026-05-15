@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UHC Guide — Shielding</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>🛡️ Shielding</h1>
+  <div class="header-actions">
+    <a class="button" href="{{ url_for('uhc') }}">← UHC Guide</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <p class="section-kicker">UHC Guide</p>
+  {% include 'partials/uhc_tabs.html' %}
+
+  <div class="panel">
+    <h2>🛡️ Shielding</h2>
+    <p>❗ Shielding is SUPER important in UHC, because while in other modes, it's nearly impossible to be punished for shielding poorly, in UHC, you can be.</p>
+  </div>
+
+  <div class="panel">
+    <h2>⌚ Timing</h2>
+    <p>On almost all servers, there is a base delay of about 250ms + your ping for when you pull up your shield. This means on 50 ping you will have a 300ms delay on your shield.</p>
+  </div>
+
+  <div class="panel">
+    <h2>🗡️ Auto-Hitting</h2>
+    <p>In UHC, it is SUPER useful to auto-hit your opponents (meaning while holding your shield up, you spam click or time your left click so that as soon as they break your shield, you'll hit them.) This is because if you aren't careful when your shield is disabled, you can be stun webbed, which can have dire consequences. Auto-hitting well is extremely important, and you want to try and either get a crit on them with it, or deal as much KB as possible to them.</p>
+  </div>
+
+  <div class="panel">
+    <h2>📶 High ping</h2>
+    <p>When you are on higher ping, it is a lot harder to shield. Most of the times, it isn't worth it to shield, however, you can also get into positions where it would be extremely beneficial to sacrifice your shield and auto-hit. Keep in mind, that if you are above 100 ping, you will have an incredibly high shield delay of 350ms, as opposed to your opponent who may be on lower ping, and have a lower delay than you. In most cases, don't play entirely for your shield or utility, try and melee as much as possible and only shield when you need to.</p>
+  </div>
+
+  <div class="panel">
+    <h2>🟢 Low ping</h2>
+    <p>When you are on low ping, your shield can be insanely important to you. In most cases, if you are fighting someone on higher ping, they'll struggle more breaking your shield, so you should use it as much as possible to block their hits. Just be careful that you do not get stunned, because if they start an agro on you, it may be difficult to get them off of you.</p>
+  </div>
+
+  <div class="panel">
+    <h2>⚖️ Equal ping</h2>
+    <p>When your opponent has ping that is equal to yours, higher or lower, you should use your shield sparingly, only timing it for when you think they may try and break your shield. It is also good to note that if your opponent tries a damage boosting cooldown trick, their axe will not be able to disable your shield and you'll entirely block their hit if they try and do that to you. Also, at a longer range, if you think your opponent may try and bow you, block up, and if you are trying to get closer to them, hold your shield up. It could happen that they shoot you with their crossbow, however it is better to do that so that they can't bow spam you.</p>
+    <p>In trades, you want to use your shield at the start of trades, so that they may have a harder time trying to use their utilities on you. If they start an agro on you, they may end up hitting through your shield in important times, so using your shield to prevent them from starting one early on can be incredibly beneficial to you.</p>
+  </div>
+
+  <div class="panel">
+    <h2>📝 Notes</h2>
+    <p>In UHC, a lot of the tricks that work in other modes, wouldn't work here. This is because if you make a mistake with your shielding, it is easy to punish you for it with utilities, which is why things like baiting your shield isn't as good of an idea.</p>
+  </div>
+
+  <div class="next">
+    <a class="button" href="{{ url_for('uhc_bowing') }}">▶ Next → Bowing</a>
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", e => {
+    document.body.style.opacity = "0";
+  });
+});
+</script>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>
