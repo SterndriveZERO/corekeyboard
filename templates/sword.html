@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚔️ Minecraft PvP Guide</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>⚔️ Sword PvP Hub</h1>
+  <div class="header-actions">
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container sword-hub">
+
+  <div class="grid sword-hub-grid">
+
+    <a class="card" href="/sword/basic">🔰 Basic Knowledge</a>
+    <a class="card" href="/sword/intro">🥊 Techniques Intro</a>
+    <a class="card" href="/sword/core">🔊 Core Techniques</a>
+    <a class="card" href="/sword/intermediate">🔊 Intermediate Techniques</a>
+    <a class="card" href="/sword/combo">🤖 Combo Set-Up</a>
+    <a class="card" href="/sword/defense">🦾 Defensive Tactics</a>
+    <a class="card" href="/sword/advanced">🧬 Advanced Techniques</a>
+    <a class="card" href="/sword/playstyle">🏅 Playstyle</a>
+    <a class="card" href="/sword/sweeps">🪃 Advanced Sweeps</a>
+    <a class="card" href="/sword/skills">🌟 Skills</a>
+
+  </div>
+
+</div>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UHC Guide — UHCs</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>🌄 UHCs</h1>
+  <div class="header-actions">
+    <a class="button" href="{{ url_for('uhc') }}">← UHC Guide</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <p class="section-kicker">UHC Guide</p>
+  {% include 'partials/uhc_tabs.html' %}
+
+  <div class="panel">
+    <h2>Where to play</h2>
+    <p>These are community UHC servers players queue on today. IPs, hosts, and player counts can shift — double-check in your client and each server’s Discord for the latest.</p>
+  </div>
+
+  <div class="panel">
+    <h2>ArcticMC</h2>
+    <ul>
+      <li><b>IP</b> — <code>eu.arcticmc.net</code></li>
+      <li><b>Host</b> — France 🇫🇷</li>
+      <li><b>Playerbase</b> — 20–50 players</li>
+    </ul>
+    <p>Join the Arctic Discord server!</p>
+  </div>
+
+  <div class="panel">
+    <h2>Beedom</h2>
+    <ul>
+      <li><b>IP</b> — <code>sa.beedom.net</code></li>
+      <li><b>Host</b> — Santiago, Chile 🇨🇱</li>
+      <li><b>Playerbase</b> — 40–80 players</li>
+    </ul>
+    <p>Join the Beedom Discord server!</p>
+  </div>
+
+  <div class="panel">
+    <h2>Polaris</h2>
+    <ul>
+      <li><b>IP</b> — <code>polarismc.us</code></li>
+      <li><b>Host</b> — Miami, USA 🇺🇸</li>
+      <li><b>Playerbase</b> — 40–100 players</li>
+    </ul>
+    <p>Join the Polaris Discord server!</p>
+  </div>
+
+  <div class="panel">
+    <h2>Caramel UHC</h2>
+    <ul>
+      <li><b>IP</b> — <code>carameluhc.wither.host</code></li>
+      <li><b>Host</b> — Miami, USA 🇺🇸</li>
+      <li><b>Playerbase</b> — 15–40 players</li>
+    </ul>
+    <p>Join the Caramel UHC Discord server!</p>
+  </div>
+
+  <div class="panel">
+    <h2>OnlyGames UHC</h2>
+    <ul>
+      <li><b>IP</b> — <code>uhc.onlygames.us</code></li>
+      <li><b>Host</b> — Miami, USA 🇺🇸</li>
+      <li><b>Playerbase</b> — 20–30 players</li>
+    </ul>
+    <p>Join the OnlyGames Discord server!</p>
+  </div>
+
+  <div class="panel">
+    <h2>Frog UHC</h2>
+    <ul>
+      <li><b>IP</b> — <code>frog.oceanias.net</code> 🐸</li>
+      <li><b>Host</b> — Australia 🇦🇺</li>
+      <li><b>Playerbase</b> — 10–30 players</li>
+    </ul>
+    <p>Join the FrogUHC Discord server!</p>
+  </div>
+
+  <div class="next">
+    <a class="button" href="{{ url_for('uhc_basic_knowledge') }}">▶ Back to start → Basic Knowledge</a>
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", e => {
+    document.body.style.opacity = "0";
+  });
+});
+</script>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

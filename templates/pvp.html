@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚔️ Minecraft PvP Guide</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>⚔️ Minecraft PvP Guide</h1>
+  <div class="header-actions">
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="pvp-hub-intro" tabindex="0" aria-label="Intro; hover or focus to expand">
+    <div class="panel pvp-hub-welcome-trigger">
+      <h2>Welcome to the Minecraft PvP Guide!</h2>
+    </div>
+    <div class="pvp-hub-reveal">
+      <div class="pvp-hub-reveal-inner">
+        <div class="panel">
+          <p>The simple goal of my guide is to help both experienced players and beginners become better at Minecraft PvP faster and more efficiently. First of all, I want to point out that all of the strategies mentioned cannot be mastered immediately, and you will not see immediate improvement. Therefore, the best way to improve as quickly as possible is to practice. However, I am confident that after some time, you will notice an improvement with this guide.</p>
+        </div>
+        <div class="panel">
+          <h2>Everything there is to know about 1.9+ Minecraft PvP</h2>
+          <p>This guide will reveal all the tips and tricks necessary to thoroughly understand and dominate all forms of PvP combat. Here you will find strategies to help you get better quickly, and this guide is separated into different sections for each gamemode.</p>
+        </div>
+        <div class="panel">
+          <h2>Why me?</h2>
+          <p>I am a former top 600 Minecraft PvPer globally, and I have achieved #50 overall in SMP, and LT3 level in every shield kit, with over 1000 hours of playtime. I have been playing Minecraft as a game for over half a decade, and my knowledge on the game will help you more than any other bullshit online tutorials. Also, while making this guide I have gotten help from multiple T2+ and top 100 players, so the information provided will be credible.</p>
+          <p>If you have any questions or would like to request private training, feel free to DM me on Discord — my username is <b>sterndrive</b>!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>Select a category</h2>
+
+  <div class="grid">
+    <a class="card" href="{{ url_for('beginner') }}">
+      <h2>📘 Beginner guide</h2>
+      <p>Settings, mods, texture packs, and tips for PvP</p>
+    </a>
+    <a class="card" href="{{ url_for('sword') }}">
+      <h2>⚔️ Sword PvP</h2>
+      <p>The most advanced 1.9+ sword guide</p>
+    </a>
+    <a class="card" href="{{ url_for('uhc') }}">
+      <h2>🌄 UHC Guide</h2>
+      <p>Melee, utilities, gamesense, shielding, and more!</p>
+    </a>
+  </div>
+
+</div>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

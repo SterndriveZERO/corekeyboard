@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚔️ Minecraft PvP Guide</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>⚔️ Basic Knowledge</h1>
+  <div class="header-actions">
+    <a class="button" href="javascript:history.back()">← Back</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- HIT TYPES -->
+  <div class="panel">
+    <h2>⚔️ Hit Types</h2>
+    <p>There are <b>5 different hits</b>, all with individual sound.</p>
+
+    <ul>
+      <li><b>Sweep Hit</b> – 90%-100% charged, cancels sprint, AoE damage.</li>
+      <li><b>Sprint Hit</b> – 90%-100% charged while sprinting, extra knockback.</li>
+      <li><b>Critical Hit</b> – 90%-100% charged while falling, bonus damage + particles.</li>
+      <li><b>Pick Hit</b> – 0%-90% charged, lower damage/knockback.</li>
+      <li><b>Standard Hit</b> – Jump hit without sprint, not useful in combat.</li>
+    </ul>
+  </div>
+  
+  <!-- GAME RULES -->
+  <div class="panel">
+    <h2>📝 Game Rules</h2>
+    <ul>
+      <li><b>Reach</b> – Max range is 3 blocks</li>
+      <li><b>Momentum</b> – Forward = more range, back = less range</li>
+      <li><b>Knockback Rule 1</b> – Sprint facing target reduces KB</li>
+      <li><b>Knockback Rule 2</b> – Taking KB + sprinting reduces KB by 40%</li>
+      <li><b>Crouch</b> – Reduces hitbox size</li>
+      <li><b>Priority</b> – Sprint hits beat most other hits</li>
+    </ul>
+  </div>
+
+  <!-- TERMS -->
+  <div class="panel">
+    <h2>🧑‍🏫 Terms</h2>
+    <ul>
+      <li><b>First Hit</b> – First hit in neutral position</li>
+      <li><b>Hit Advantage</b> – Ability to hit first in a trade</li>
+      <li><b>Hit Priority</b> – Control gained by landing first hit</li>
+      <li><b>Stun</b> – Opponent cannot hit/move temporarily</li>
+      <li><b>Knock Away</b> – Sprint hit that pushes opponent back</li>
+      <li><b>Double Hit</b> – Hit after knockback without being hit</li>
+      <li><b>Crit Chain</b> – Multiple crits in a row</li>
+      <li><b>Stun Combo</b> – Multiple stun hits in a row</li>
+    </ul>
+  </div>
+
+  <!-- NEXT BUTTON -->
+  <div class="next">
+    <a class="button" href="/sword/intro">
+        ▶ Next → Techniques Intro
+    </a>
+</div>
+
+</div>
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", e => {
+    document.body.style.opacity = "0";
+  });
+});
+</script>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

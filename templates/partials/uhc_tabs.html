@@ -1,0 +1,9 @@
+<nav class="tab-bar" aria-label="UHC guide sections">
+  <a class="tab{% if request.endpoint == 'uhc_basic_knowledge' %} tab-active{% endif %}" href="{{ url_for('uhc_basic_knowledge') }}">🔰 Basic Knowledge</a>
+  <a class="tab{% if request.endpoint == 'uhc_melee' %} tab-active{% endif %}" href="{{ url_for('uhc_melee') }}">🥊 Melee</a>
+  <a class="tab{% if request.endpoint == 'uhc_utilities' %} tab-active{% endif %}" href="{{ url_for('uhc_utilities') }}">🪣 Utilities</a>
+  <a class="tab{% if request.endpoint == 'uhc_gamesense' %} tab-active{% endif %}" href="{{ url_for('uhc_gamesense') }}">🌟 Gamesense</a>
+  <a class="tab{% if request.endpoint == 'uhc_shielding' %} tab-active{% endif %}" href="{{ url_for('uhc_shielding') }}">🛡️ Shielding</a>
+  <a class="tab{% if request.endpoint == 'uhc_bowing' %} tab-active{% endif %}" href="{{ url_for('uhc_bowing') }}">🏹 Bowing</a>
+  <a class="tab{% if request.endpoint == 'uhc_uhcs' %} tab-active{% endif %}" href="{{ url_for('uhc_uhcs') }}">🌄 UHCs</a>
+</nav>

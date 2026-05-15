@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚔️ Minecraft PvP Guide</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>🥊 Techniques Intro</h1>
+  <div class="header-actions">
+    <a class="button" href="javascript:history.back()">← Back</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+<div class="container">
+
+  <!-- CREDITS -->
+  <div class="panel">
+    <h2>📋 Credits</h2>
+    <ul>
+      <li><b>Technique Inventor</b> – First player to perform the technique (sometimes instinctively)</li>
+      <li><b>Discovered by</b> – First person to understand how it works</li>
+      <li><b>Name Creator</b> – Person who named the technique</li>
+    </ul>
+  </div>
+
+  <!-- TECHNIQUE TYPES -->
+  <div class="panel">
+    <h2>📝 Technique Types</h2>
+    <ul>
+      <li><b>Damage</b></li>
+      <li><b>Stun</b></li>
+      <li><b>Knockaway</b></li>
+      <li><b>Spacing</b></li>
+      <li><b>No Knockback</b></li>
+      <li><b>Escape</b></li>
+    </ul>
+  </div>
+
+  <!-- RISK TO REWARD -->
+  <div class="panel">
+    <h2>📊 Risk to Reward Ratio</h2>
+
+    <h3>🔹 Risk Level</h3>
+    <p>The chance of getting countered while attempting a technique.</p>
+
+    <h3>🔹 Reward</h3>
+    <ul>
+      <li><b>Low Reward</b> – Small advantage (example: free hit with no control after)</li>
+      <li><b>Medium Reward</b> – Helps escape bad situations</li>
+      <li><b>High Reward</b> – Gives hit priority or full advantage</li>
+    </ul>
+  </div>
+
+  <!-- NEXT BUTTON -->
+  <div class="next">
+    <a class="button" href="/sword/core">
+        ▶ Next → Core Techniques
+    </a>
+</div>
+
+</div>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

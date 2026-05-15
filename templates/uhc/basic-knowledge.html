@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UHC Guide — Basic Knowledge</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>🔰 Basic Knowledge</h1>
+  <div class="header-actions">
+    <a class="button" href="{{ url_for('uhc') }}">← UHC Guide</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <p class="section-kicker">UHC Guide</p>
+  {% include 'partials/uhc_tabs.html' %}
+
+  <div class="panel">
+    <h2>🔰 Basic Knowledge</h2>
+    <p>There are many different items in the UHC kit. Some of the basics you will <b>need</b> to know how to use are the following:</p>
+    <ol>
+      <li><b>🛡️ Shield</b> — Used to properly evade damage from the opponent and to provide better opportunities for good trades.</li>
+      <li><b>⚔️ Sword (Sharp 4)</b> — Useful to deal damage, keeping distance from your opponent, and mine webs faster.</li>
+      <li><b>🪓 Axe (Sharp 1)</b> — Used mainly for disabling your opponent’s shield or doing extra damage; can be used to stun web.</li>
+      <li><b>🍎 Golden apples</b> — Used to gain 2 hearts of absorption and 2 hearts of normal regen; used to keep your health high.</li>
+      <li><b>🕸️ Cobwebs</b> — Useful to trap your opponents, perfect for aggroing them when they have low health, or trapping them so they can’t chase you.</li>
+      <li><b>🌊 Water</b> — Extremely useful for extinguishing yourself, breaking webs, and keeping your opponent stuck in water.</li>
+      <li><b>🪣🔥 Lava</b> — Used to help slow your opponent, damage your opponent, redirecting your opponent’s attention to extinguishing themselves, and draining them.</li>
+      <li><b>🏹 Bow</b> — The bow is great for dealing damage to bring it in your favor, breaking their momentum, and doing it from a distance.</li>
+      <li><b>🎆 Crossbow</b> — Crossbowing is perfect for dealing ranged damage through shields, essentially doing the same as the bow.</li>
+      <li><b>🪵 Blocks</b> — Great for removing their water, protecting yourself, and helping to aggro.</li>
+      <li><b>⛏️ Pickaxe</b> — Used to mine cobblestone quickly.</li>
+    </ol>
+  </div>
+
+  <div class="panel">
+    <h2>📝 Game rules</h2>
+    <ul>
+      <li><b>Reach</b> — The max range is 3 blocks with your melee weapons, but 4 blocks with your water and lava. (In 1.20.6+, it is 4 blocks. In 1.20.5 and below, it is 4.5.)</li>
+      <li><b>Knockback</b> — If you sprint while facing the target, you take less knockback. (Works whilst jumping too.)</li>
+      <li><b>Range</b> — If you jump or run away from your opponent, or get knocked back, your range is lowered.</li>
+      <li><b>Crouching</b> — Decreases your hitbox size.</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>📃 Common terms</h2>
+    <ul>
+      <li><b>First hit</b> — The first hit you land on your opponent whenever you’re engaging (typically before they hit you).</li>
+      <li><b>Crit chain</b> — Getting multiple crits in a row.</li>
+      <li><b>Spacing</b> — How well you distance yourself from your opponent.</li>
+      <li><b>Stun</b> — When you double click your mouse to give your opponent significant vertical KB.</li>
+      <li><b>Stun webbing</b> — When you stun your opponent, and place a web beneath them.</li>
+      <li><b>Drains</b> — Removing your opponent’s waters.</li>
+      <li><b>Floppy arrow</b> — Bowing with low charge.</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>⚙️ Useful mods</h2>
+    <p>Here, mods that are important or useful will be posted below.</p>
+    <ul>
+      <li><b>Player health indicators</b> — Very useful for taking good opportunities to pressure, and nice for knowing what they are at.</li>
+      <li><b>Perspective / freelook</b> — Not to be confused with freecam; this lets you orbit around your character, essentially having F5 that points in any direction you want.</li>
+      <li><b>Crosshair indicator</b> — Useful to see when your opponent is in your reach; helps your spacing.</li>
+    </ul>
+  </div>
+
+  <div class="next">
+    <a class="button" href="{{ url_for('uhc_melee') }}">▶ Next → Melee</a>
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", e => {
+    document.body.style.opacity = "0";
+  });
+});
+</script>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

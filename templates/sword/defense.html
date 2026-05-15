@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>⚔️ Minecraft PvP Guide</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>🛡️ Defensive Tactics</h1>
+  <div class="header-actions">
+    <a class="button" href="javascript:history.back()">← Back</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- HIT DODGING -->
+  <div class="technique">
+    <h2>🪃 Hit Dodging</h2>
+
+    <span class="tag">Defense</span>
+
+    <h3>1. Dodging First Hits</h3>
+    <p>
+      Walk back right before opponent reaches range to avoid the hit.
+      Timing + distance is key.
+    </p>
+
+    <ul>
+      <li>Best used in defensive playstyles</li>
+      <li>After dodge → go for stun combo or crit</li>
+    </ul>
+
+    <p><b>Countered by:</b> Falling Sprinthit</p>
+
+    <h3>2. Baits</h3>
+    <p>
+      Move forward slightly to bait attacks, then instantly back out to dodge.
+      This forces mistakes and creates hit advantage.
+    </p>
+
+    <h3>3. Turn Back Movement</h3>
+    <p>
+      Turn away briefly when opponent attacks, then instantly re-engage.
+    </p>
+
+    <ul>
+      <li>Can be used mid-trade</li>
+      <li>Best followed with crits</li>
+    </ul>
+  </div>
+
+  <!-- ESCAPING -->
+  <div class="technique">
+    <h2>🏃‍♂️ Escaping Stun Combos</h2>
+
+    <span class="tag">Survival</span>
+
+    <h3>Methods:</h3>
+
+    <ul>
+      <li><b>Hold S</b> – Most common escape method</li>
+      <li><b>S-Hold Jump</b> – Increases knockback (use vs high ping)</li>
+      <li><b>Turn and Run</b> – Full disengage escape</li>
+    </ul>
+  </div>
+
+  <!-- MOVEMENT -->
+  <div class="technique">
+    <h2>🚀 Movement</h2>
+
+    <span class="tag">Spacing / Control</span>
+
+    <p>
+      Movement is used to force misses and create distance for stun hits.
+    </p>
+
+    <ul>
+      <li>Make opponent miss hits</li>
+      <li>Create spacing for combos</li>
+      <li>Works best with crits, sweeps, sprinthits</li>
+    </ul>
+
+    <p><b>Warning:</b> Excess movement can increase knockback and lead to being comboed.</p>
+  </div>
+
+  <!-- STRAFE -->
+  <div class="technique">
+    <h2>⭐ Strafe</h2>
+
+    <span class="tag">Movement Style</span>
+
+    <ul>
+      <li><b>Short Strafe</b> – fast A/D movement</li>
+      <li><b>Side-to-Side</b> – switch direction every hit</li>
+      <li><b>Circle Strafe</b> – rotate around opponent</li>
+    </ul>
+
+    <p>
+      Strafing makes you harder to hit but increases knockback taken.
+    </p>
+
+    <p>
+      Use only when you cannot be punished or when spacing for a stun.
+    </p>
+  </div>
+
+  <!-- NEXT -->
+  <div class="next">
+    <a class="button" href="/sword/advanced">
+      ▶ Continue Training → Advanced Techniques
+    </a>
+  </div>
+
+</div>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

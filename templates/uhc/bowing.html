@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UHC Guide — Bowing</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>🏹 Bowing</h1>
+  <div class="header-actions">
+    <a class="button" href="{{ url_for('uhc') }}">← UHC Guide</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <p class="section-kicker">UHC Guide</p>
+  {% include 'partials/uhc_tabs.html' %}
+
+  <div class="panel">
+    <h2>🏹 Bowing</h2>
+    <p>❗ Bowing in UHC is super important, because it chips your opponents health down, and can protect you in certain cases.</p>
+  </div>
+
+  <div class="panel">
+    <h2>⛓️‍💥 Chip Damage</h2>
+    <p>This is pretty self explanatory, but when your opponent eats a gap, you can shoot them while they are doing it to either lower their HP, or get rid of their absorption. It's super important that you don't get rid of their absorption if they can eat another gap right after, otherwise it will have been for nothing. Ideally, you want to get rid of their health when they don't have absorption. Crossbows can also be used at the end of exchanges to get extra damage when they're out of your reach. It can also be used if they gap and hold up their shield.</p>
+  </div>
+
+  <div class="panel">
+    <h2>🛑 Breaking Momentum</h2>
+    <p>Another major benefit of bowing and crossbowing is that you can break your opponents momentum with it. You can use a floppy arrow with your bow, if they are close to help prevent them from being able to hit you. Same with the crossbow, you can use it with your melee in order to essentially stun them with it. Since the crossbow has piercing, it is a much better option for this. It will ensure you do damage with it, and it can be used instantly so if you are trying to get your opponent away from you, it is easier to use. However, with the bow, you can shoot floppy arrows faster than you can reload the crossbow if you need to shoot multiple, so it is better if your opponent has higher health than you.</p>
+    <p>An example is shown below.</p>
+  </div>
+
+  <div class="panel">
+    <h2>🧱 Shooting Over Blocks</h2>
+    <p>While not necessarily something you can do as often as the others, when your opponent has a part of them sticking out, you can shoot their hitbox AROUND the block, even though most of the player is behind the block. This can help you finalize kills on your opponent, or punish them when healing.</p>
+    <p>It is also important that when you do protect yourself with blocks, you should ALWAYS try and protect yourself as completely as possible, that way your opponent cannot shoot over it, or around it. It'll ensure you get your gaps off safely :)</p>
+  </div>
+
+  <div class="panel">
+    <h2>🏹 Crossbow Plays</h2>
+    <p>The crossbow is almost completely different to a bow, since it has piercing and can be shot instantly. With it, it also comes with the cost of the reload time. To ensure that you make the most out of your crossbow, try and use it only when you NEED to break your opponents momentum, or when they are low and you can either finish a kill, or bring them close to it so you can ensure the kill. Another way to use it is when you are in a web. You can hit your opponents away with a sword, and then crossbow them immediately after, to ensure that it is more difficult for them to drain you or punish you in the web. You can also crossbow your opponent if they are holding their shield up, and you want quick damage. It is important to note that the crossbow will do a bit less damage over time than a bow, so remember to only crossbow at closer range interactions, or when they are holding their shield up.</p>
+  </div>
+
+  <div class="next">
+    <a class="button" href="{{ url_for('uhc_uhcs') }}">▶ Next → UHCs</a>
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", e => {
+    document.body.style.opacity = "0";
+  });
+});
+</script>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>

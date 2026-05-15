@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UHC Guide — Settings</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='icon.png') }}">
+</head>
+
+<body>
+{% include 'partials/particles_background.html' %}
+
+<header>
+  <h1>⚙️ Settings</h1>
+  <div class="header-actions">
+    <a class="button" href="{{ url_for('uhc') }}">← UHC Guide</a>
+    {% include 'partials/top_nav.html' %}
+  </div>
+</header>
+
+<div class="container">
+
+  <p class="section-kicker">UHC Guide</p>
+  {% include 'partials/uhc_tabs.html' %}
+
+  <div class="panel">
+    <h2>Comfort first</h2>
+    <p>If you are already consistent on a sensitivity and keybind layout, <b>do not reset everything</b> for UHC. Tune small things (FOV, toggle sprint, shield slot) instead of chasing “perfect” numbers you cannot muscle-memory yet.</p>
+  </div>
+
+  <div class="panel">
+    <h2>Aim &amp; look</h2>
+    <ul>
+      <li><b>Mouse DPI + sensitivity</b> — Pick a combo where you can track bow strafes and snap to melee without overshooting. Most players land somewhere in ~800–1600 DPI with moderate in-game sens.</li>
+      <li><b>FOV</b> — Higher FOV helps awareness; very high values can distort depth for rod and bow. Find a stable value and keep it.</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>UHC-specific habits</h2>
+    <ul>
+      <li><b>Hotbar order</b> — Sword, rod, bow, shield, gaps, lava/water on slots you can hit blind under pressure.</li>
+      <li><b>Toggle sprint</b> — Extremely common so sprint management in trades does not eat focus.</li>
+      <li><b>Reduced particles / clear hitsounds</b> — If allowed on your client, cleaner feedback helps read trades (rules vary by server).</li>
+    </ul>
+  </div>
+
+  <div class="next">
+    <a class="button" href="{{ url_for('uhc_uhcs') }}">▶ Next → UHCs</a>
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", e => {
+    document.body.style.opacity = "0";
+  });
+});
+</script>
+
+{% include 'partials/footer.html' %}
+
+</body>
+</html>
