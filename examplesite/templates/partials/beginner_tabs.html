@@ -1,6 +1,0 @@
-<nav class="tab-bar" aria-label="Beginner guide sections">
-  <a class="tab{% if request.endpoint == 'beginner_settings' %} tab-active{% endif %}" href="{{ url_for('beginner_settings') }}">Optimized settings</a>
-  <a class="tab{% if request.endpoint == 'beginner_mods' %} tab-active{% endif %}" href="{{ url_for('beginner_mods') }}">Mods</a>
-  <a class="tab{% if request.endpoint == 'beginner_texture_packs' %} tab-active{% endif %}" href="{{ url_for('beginner_texture_packs') }}">Texture packs</a>
-  <a class="tab{% if request.endpoint == 'beginner_tips' %} tab-active{% endif %}" href="{{ url_for('beginner_tips') }}">Tips</a>
-</nav>
